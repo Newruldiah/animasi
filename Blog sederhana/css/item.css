@@ -1,0 +1,20 @@
+.navbar{
+    background-color: #A0C878;
+    font-family: 'bakso'Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    font-family: bakso; src:url('font/Backso.otf');
+}
+a{
+    font-family: bakso; src:url('font/Backso.otf');
+}
+
+.btn{
+    background-color: #DDEB9D;
+    
+}
+.p{
+    text-align: justify;
+}
