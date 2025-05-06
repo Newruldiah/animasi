@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Frame</title>
+</head>
+<style>
+    #pesawat {
+        width: 80px;
+        height: 60px;
+        background-color: gold;
+        position: absolute;
+        left: -80px;
+        top: 150px;
+    }
+</style>
+<body>
+    <div id="pesawat"></div>
+<script>
+    const pesawat =document.getElementById('pesawat');
+    let posisiX =-80;
+    const kecepatan= 2;
+
+    function animasiPesawat() {
+        posisiX += kecepatan;
+        pesawat.style.left = posisiX + 'px';
+        if (posisiX < window.innerWidth) {
+            requestAnimationFrame(animasiPesawat);
+        }
+    }
+    requestAnimationFrame(animasiPesawat);
+</script>
+</body>
+</html>
